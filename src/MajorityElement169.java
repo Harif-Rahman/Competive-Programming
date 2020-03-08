@@ -17,7 +17,7 @@ import java.util.HashMap;
 
 public class MajorityElement169 {
     public static void main(String[] args) {
-        int[] arr ={2,1,2,1,2,2,1};
+        int[] arr ={2,1,2,4,7};
         majorityElement1(arr);
 
     }
@@ -37,6 +37,7 @@ public class MajorityElement169 {
     }
 
     /*
+    WONT work if arr doesnt contains the majority element
     Boyer-Moore Majority Vote Algorithm
     1) set major as first element
     2) for 1 to n:

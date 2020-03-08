@@ -15,13 +15,19 @@ public class ReverseStringNo541 {
 
     private static StringBuilder sb = new StringBuilder();
 
+
     public static String reverse1(String s, int k) {
+
         for (int i = 0; i < s.length(); i += 2 * k) {
             int adj = i + k > s.length() ? s.length() : i + k;
             sb.append(reverseStr(s.substring(i, adj)));
             sb.append(s.substring(adj, i + 2 * k > s.length() ? s.length() : i + 2 * k));
         }
         return sb.toString();
+    }
+    private boolean isVowel(char c){
+        return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
     }
 
     private static String reverseStr(String str) {

@@ -1,14 +1,10 @@
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr ={-1,0,3,5,9,12};
-        System.out.println(binarySearchIter(arr,0,arr.length-1,0));
+        System.out.println(binarySearchRecursively(arr,0,arr.length-1,0));
     }
     private static int binarySearchRecursively(int[] arr, int low, int high, int k){
         if(low<=high){
-            if(arr[low] == k)
-                return low;
-            if(arr[high] == k)
-                return high;
             int mid = low + (high-low)/2;
             if(arr[mid] == k)
                 return mid;
@@ -21,10 +17,6 @@ public class BinarySearch {
     }
     private static int binarySearchIter(int[] arr,int low,int high,int k){
         while(low<=high){
-            if(arr[low] == k)
-                return low;
-            if(arr[high] == k)
-                return high;
             int mid = low + (high-low)/2;
             if(arr[mid] == k)
                 return mid;
