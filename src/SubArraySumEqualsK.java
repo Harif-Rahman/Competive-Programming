@@ -16,8 +16,17 @@ The range of numbers in the array is [-1000, 1000] and the range of the integer 
  */
 
 
-/*  23 1  2   4  3  3  7
+/*  1 2 3 4   5 6
+    1 3 6 10 15 21
+
+
+     1 3 6  3  1
+    [1,2,3,-3,-2]
+
     0     i      j
+
+
+
     23 24 26  30 33 36 43
     23 1
     24 1
@@ -25,9 +34,9 @@ The range of numbers in the array is [-1000, 1000] and the range of the integer 
  */
 public class SubArraySumEqualsK {
     public static void main(String[] args) {
-        int[] arr = {23,1,2,4,3,3,7};
+        int[] arr = {0,0};
 
-        System.out.println(subArraySumCount(arr, 6));
+        System.out.println(subArraySumCount(arr, 9));
     }
     private static int subArraySumCount(int[] arr,int k){
         Map<Integer,Integer> map = new HashMap<>(); // to store the (sum,no of times the sum has occured)

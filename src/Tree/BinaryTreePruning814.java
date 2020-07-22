@@ -29,12 +29,6 @@ public class BinaryTreePruning814 {
         return root.val == 0 || leftContains || rightContains;
     }
 
-
-
-
-
-
-
     static class TreeNode {
         int val;
         TreeNode left;

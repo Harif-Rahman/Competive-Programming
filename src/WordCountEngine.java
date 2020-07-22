@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 class WordCountEngine {
-    static String tokenizeString(String str) {
+ /*   static String tokenizeString(String str) {
         int len = str.length();
         String result = "";
 
@@ -101,6 +104,56 @@ class WordCountEngine {
         String str = "Practice makes perfect. you'll only get Perfect by practice. just practice!";
         wordCountEngine(str);
 
+    }*/
+
+    static String[][] wordCountEngine(String document) {
+        // your code goes here
+        // String puncuationRemovedString =
+        document = removePunctuationAndMakeLowerCase(document);
+        LinkedHashMap<String,Integer> map = new LinkedHashMap<>();
+        String[] split = document.split("\\s");
+        for(String str : split){
+            map.put(str,map.getOrDefault(str,0)+1);
+        }
+        List<String>[] ls = new ArrayList[split.length];
+        for(Map.Entry<String,Integer> entry : map.entrySet()){
+            int val = entry.getValue();
+            String str = entry.getKey();
+            if(ls[val] == null){
+                ls[val] = new ArrayList<>();
+            }
+            ls[val].add(str);
+        }
+        String[][] res = new String[map.size()][2];
+        int ind = 0;
+        for(int i=map.size()-1;i>=0;i--){
+            if(ls[i] != null){
+                int count = 0;
+                while(count < ls[i].size()){
+                    res[ind++] = new String[]{ls[i].get(count++),""+i};
+                }
+            }
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        String str = "Every book is a quotation; and every house is a quotation out of all forests, and mines, and stone quarries; and every man is a quotation from all his ancestors. ";
+        wordCountEngine(str);
+
+
+    }
+    public static String removePunctuationAndMakeLowerCase(String str){
+        str = str.trim();
+        StringBuilder sb = new StringBuilder();
+        for(char c : str.toCharArray())
+        {
+            if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == ' '){
+                sb.append(Character.toLowerCase(c));
+            }
+        }
+
+        return sb.toString();
     }
 
 }

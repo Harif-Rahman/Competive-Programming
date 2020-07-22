@@ -1,30 +1,39 @@
 public class MaximumProductOfThreeNumbers628 {
     public static void main(String[] args) {
-        int[] arr = {-4,-3,-2,-1,60};
+        int[] arr ={-5,-4,2,3};
         maximumProduct(arr);
     }
-    public static int maximumProduct(int[] nums) {
+    public static int maximumProduct(int[] A) {
         int firstMax = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
         int thirdMax = Integer.MIN_VALUE;
-
-        for(int i : nums){
-            if(i > firstMax){
+        int firstMin = Integer.MAX_VALUE;
+        int secondMin = Integer.MAX_VALUE;
+        for(int i=0;i<A.length;i++){
+            int curr = A[i];
+            if(curr > firstMax){
                 thirdMax = secondMax;
                 secondMax = firstMax;
-                firstMax = i;
+                firstMax = curr;
             }else{
-                if(i > secondMax){
+                if(curr > secondMax){
                     thirdMax = secondMax;
-                    secondMax = i;
+                    secondMax = curr;
                 }else{
-                    if(i > thirdMax){
-                        thirdMax = i;
+                    if(thirdMax < curr){
+                        thirdMax = curr;
                     }
                 }
             }
-
+            if(curr < firstMin){
+                secondMin = firstMin;
+                firstMin = curr;
+            }else{
+                if(curr < secondMin){
+                    secondMin = curr;
+                }
+            }
         }
-        return firstMax*secondMax*thirdMax;
+        return Math.max(firstMax*secondMax*thirdMax,firstMin*secondMin*firstMax);
     }
 }

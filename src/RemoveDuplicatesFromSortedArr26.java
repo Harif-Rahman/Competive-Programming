@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class RemoveDuplicatesFromSortedArr26 {
     /*
     26. Remove Duplicates from Sorted Array
@@ -30,7 +32,11 @@ Your function should return length = 5, with the first five elements of nums bei
 It doesn't matter what values are set beyond the returned length.
      */
     public static void main(String[] args) {
-
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(5000);
+        al.add(5000);
+        al.add(5000);
+        removeDuplicates(al);
     }
     public static int removeDuplicates(int[] nums) {
         int begInd = 0; //pointer which hold the initial pointer to store the unique elements
@@ -41,6 +47,19 @@ It doesn't matter what values are set beyond the returned length.
             }
         }
         return begInd+1;
+    }
+    public static int removeDuplicates(ArrayList<Integer> a) {
+        int left = 1;
+        int right =1;
+
+        while(right < a.size()){
+            if(!a.get(right).equals(a.get(right - 1))){
+                a.set(left,a.get(right));
+                left++;
+            }
+            right++;
+        }
+        return left;
     }
 
 }

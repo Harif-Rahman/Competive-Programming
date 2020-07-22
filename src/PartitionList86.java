@@ -31,20 +31,39 @@ Output: 1->2->2->4->3->5
             val = x;
         }
     }
+
+    /**
+     * ACCEPTED
+     * TC : O(N)
+     * SC : O(1)
+     * @param head
+     * @param x
+     * @return
+     */
     public static ListNode partition(ListNode head, int x) {
-        ListNode smallerHead = new ListNode(0), biggerHead = new ListNode(0);
-        ListNode smaller = smallerHead, bigger = biggerHead;
-        while (head != null) {
-            if (head.val < x) {
-                smaller = smaller.next = head;
-            } else {
-                bigger = bigger.next = head;
+        ListNode dummyhead1 = new ListNode(-1);
+        dummyhead1.next = head;
+        ListNode head1 = dummyhead1;
+        ListNode dummyhead2 = new ListNode(-1);
+        ListNode head2 = dummyhead2;
+        ListNode curr = head;
+        while(curr != null){
+            System.out.println("cxzs");
+            if(curr.val < x){
+                // attach to head1
+                head1.next = curr;
+                //move head1
+                head1 = head1.next;
+            }else{
+                // attach to head2
+                head2.next = curr;
+                //move head2
+                head2 = head2.next;
             }
-            head = head.next;
+            curr = curr.next;
         }
-        // no need for extra check because of fake heads
-        smaller.next = biggerHead.next; // join bigger after smaller
-        bigger.next = null; // cut off anything after bigger
-        return smallerHead.next;
+        head2.next = null;
+        head1.next = dummyhead2.next;
+        return dummyhead1.next;
     }
 }

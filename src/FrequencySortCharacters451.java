@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,7 +9,7 @@ import java.util.TreeMap;
 
 public class FrequencySortCharacters451 {
     public static void main(String[] args) {
-        frequencySort2("abbcccddddeeeee");
+        frequencySort3("abbcccddddeeeee");
     }
 
     /**
@@ -59,6 +57,34 @@ public class FrequencySortCharacters451 {
         }
         return res.toString();
     }
+    public static String frequencySort3(String s) {
+        Map<Character,Integer> hm = new HashMap<>();
+        for(char c : s.toCharArray()){
+            hm.put(c,hm.getOrDefault(c,0)+1);
+        }
+        PriorityQueue<Map.Entry<Character,Integer>> pq = new PriorityQueue<>(((o1, o2) -> {
+            if(o1.getValue() > o2.getValue()){
+                return -1;
+            }
+            if(o1.getValue() < o2.getValue()){
+                return 1;
+            }
+            return 0;
+        }));
+        pq.addAll(hm.entrySet());
+        StringBuilder sb = new StringBuilder();
+
+        while(!pq.isEmpty()){
+            Map.Entry<Character,Integer> entry = pq.remove();
+            int count = entry.getValue();
+            char c = entry.getKey();
+            while(count-- > 0){
+                sb.append(c);
+            }
+        }
+        return sb.toString();
+    }
+
 
     /**
      * BUCKET SORTING TECHNIQUE
