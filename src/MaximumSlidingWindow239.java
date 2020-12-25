@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class MaximumSlidingWindow239 {
 
@@ -29,48 +31,5 @@ You may assume k is always valid, 1 ≤ k ≤ input array's size for non-empty a
 
     public static void main(String[] args) {
         int[] arr = {1,3,-1,-3,5,3,6,7};
-        maxSlidingWin(arr, 3);
-
-    }
-
-    private static int[] maxSlidingWin(int[] arr, int k) {
-        if (arr.length == 1)
-            return arr;
-
-        int[] resArr = new int[arr.length - k +1];
-
-        int max = arr[0];
-        int maxInd = 0;
-        for (int i = 1; i < k; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-                maxInd = i;
-            }
-        }
-        int count =0;
-        resArr[count++] = max;
-
-        int localMax = max;
-        int begInd = 1;
-        for (int i = k; i < arr.length; i++) {
-            if (localMax< arr[i]) {
-                localMax = arr[i];
-            }
-
-            if (maxInd < begInd) { //window is outside the current maximum
-                max = localMax;
-                maxInd = i;
-                resArr[count++] = max;
-            }else{
-                // still maximum is in the current window
-                if(localMax > max){
-                    max = localMax;
-                }
-                resArr[count++] = max;
-            }
-
-            begInd++;
-        }
-        return resArr;
     }
 }

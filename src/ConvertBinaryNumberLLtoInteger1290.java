@@ -31,10 +31,10 @@ Output: 0
      */
     public static void main(String[] args) {
         ListNode ls = new ListNode(1);
-        ls.next = new ListNode(1);
+        ls.next = new ListNode(0);
         ls.next.next = new ListNode(1);
         ls.next.next.next = new ListNode(1);
-        getDecimalValue1(ls);
+        getDecimalValue2(ls);
     }
     //------me
     public int getDecimalValue(ListNode head) {

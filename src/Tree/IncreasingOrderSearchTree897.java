@@ -1,5 +1,7 @@
 package Tree;
 
+import java.util.Stack;
+
 public class IncreasingOrderSearchTree897 {
     public static void main(String[] args) {
         TreeNode treeNode = new TreeNode(4);
@@ -18,6 +20,8 @@ public class IncreasingOrderSearchTree897 {
         return res.right;
     }
 
+
+
     /**
      * recursive approach
      * TC : O(N) no of nodes in the tree
@@ -32,6 +36,25 @@ public class IncreasingOrderSearchTree897 {
         temp.right = new TreeNode(root.val);
         temp = temp.right;
         helper(root.right);
+    }
+
+    private static TreeNode helperIteratively(TreeNode root){
+        TreeNode res = new TreeNode(-1);
+        TreeNode resHead = res;
+        Stack<TreeNode> stack = new Stack();
+        TreeNode curr = root;
+        while(!stack.isEmpty() || curr != null){
+            while(curr != null){
+                // it will push head and right
+                stack.push(curr);
+                curr = curr.left;
+            }
+            TreeNode popped = stack.pop();
+            res.right = new TreeNode(popped.val);
+            res = res.right;
+            curr = popped.right;
+        }
+        return resHead.right;
     }
     static class TreeNode {
         int val;
