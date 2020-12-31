@@ -1,3 +1,5 @@
+import javafx.util.Pair;
+
 public class SwapNodesInPairs24 {
     public static void main(String[] args) {
         ListNode listNode = new ListNode(1);
