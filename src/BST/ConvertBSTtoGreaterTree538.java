@@ -9,75 +9,61 @@ public class ConvertBSTtoGreaterTree538 {
         tree.right = new TreeNode(15);
         tree.right.right = new TreeNode(20);
         tree.right.left = new TreeNode(9);
-        convertBST1(tree);
-    }
-    private static int sum = 0;
-    private static int currSum = 0;
-    public static TreeNode convertBST(TreeNode root) {
-        currSum = totSum(root);
-        helper(root);
-        return root;
-    }
-    private static void helper(TreeNode root){
-        if(root == null)
-            return;
-        helper(root.left);
-        root.val = currSum;
-        currSum -=root.val;
-        helper(root.right);
-    }
-
-    private static int totSum(TreeNode root){
-        if(root == null)
-            return 0;
-        totSum(root.left);
-        sum+=root.val;
-        totSum(root.right);
-        return sum;
-    }
-    // --------------------------- above is my solution
-
-    // here recursive one
-    private static int sum1 = 0;
-
-    public static TreeNode convertBST1(TreeNode root) {
-        if (root != null) {
-            convertBST1(root.right);
-            sum1 += root.val;
-            root.val = sum1;
-            convertBST1(root.left);
-        }
-        return root;
+        bstToGst(tree);
     }
     // here using the stack
-    public TreeNode ConvertBST(TreeNode root) {
-        TreeNode node = root;
-        Stack<TreeNode> stack = new Stack<TreeNode>();
+    public static TreeNode bstToGstIterative(TreeNode root) {
 
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
         int sum = 0;
-        while (node != null || !stack.isEmpty())
-        {
-            if (node != null)
-            {
-                stack.push(node);
-                node = node.right;
+        while(!stack.isEmpty() || curr != null){
+            while(curr != null){
+                stack.push(curr);
+                curr = curr.right;
             }
-            else
-            {
-                node = stack.pop();
-                sum += node.val;
-                node.val = sum;
-
-                node = node.left;
-            }
+            curr = stack.pop();
+            sum += curr.val;
+            curr.val = sum;
+            curr = curr.left;
         }
-
         return root;
     }
 
-
-
-
+    /**
+     * without using instance variable
+     * @param root
+     * @return
+     */
+    public static TreeNode bstToGst(TreeNode root) {
+        TreeNode sumNode = new TreeNode(0);
+        convertToGSt(root,sumNode);
+        return root;
+    }
+    private static void convertToGSt(TreeNode root,TreeNode sumNode){
+        if(root == null){
+            return;
+        }
+        convertToGSt(root.right,sumNode);
+        sumNode.val +=  root.val;
+        root.val = sumNode.val;
+        convertToGSt(root.left,sumNode);
+    }
+    // wrong one
+    public static TreeNode bstToGstWithInteger(TreeNode root) {
+        Integer sum = 0; // dont user integer on recursion its values will not be changed instead use the above one
+        convertToGStWitInteger(root,sum);
+        return root;
+    }
+    private static void convertToGStWitInteger(TreeNode root,Integer sum){
+        if(root == null){
+            return;
+        }
+        convertToGStWitInteger(root.right,sum);
+        sum += root.val;
+        root.val = sum;
+        convertToGStWitInteger(root.left,sum);
+    }
 
     static class TreeNode {
         int val;

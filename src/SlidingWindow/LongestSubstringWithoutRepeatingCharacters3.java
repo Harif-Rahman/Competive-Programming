@@ -7,46 +7,40 @@ import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters3 {
     public static void main(String[] args) {
-        String str = "dvdf";
-        lengthOfLongestSubstring1(str);
+        String str = "abcharifcnc";
+        System.out.println(lengthOfLongestSubstring1(str));
     }
 
     /**
-     * worst tc
+     * WORKING
      * @param s
      * @return
      */
     public static int lengthOfLongestSubstring(String s) {
-        Map<Character,Integer> hm = new HashMap<>();
         int left = 0;
-        int right = 0;
-        int len = 0;
-        while(right < s.length()){
-            char c = s.charAt(right);
-            hm.put(c,hm.getOrDefault(c,0)+1);
-            while(hm.get(s.charAt(right)) != null && hm.get(s.charAt(right)) > 1){
-                hm.put(s.charAt(left),hm.get(s.charAt(left))-1);
+        int max = 0;
+        Map<Character,Integer> map = new HashMap<>();
+        for(int right = 0;right < s.length();right++){
+            map.put(s.charAt(right),map.getOrDefault(s.charAt(right),0)+1);
+            while(left <= right && map.get(s.charAt(right)) > 1){
+                map.put(s.charAt(left),map.get(s.charAt(left))-1);
                 left++;
             }
-            len = Math.max(len,right-left+1);
-            right++;
+            max = Math.max(right-left+1,max);
         }
-        return len;
+        return max;
     }
     public static int lengthOfLongestSubstring1(String s) {
-        //dvdf
-        int i = 0, j = 0, max = 0;
-        Set<Character> set = new HashSet<>();
-
-        while (j < s.length()) {
-            if (!set.contains(s.charAt(j))) {
-                set.add(s.charAt(j++));
-                max = Math.max(max, set.size());
-            } else {
-                set.remove(s.charAt(i++));
+        if (s.length()==0) return 0;
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        int max=0;
+        for (int i=0, j=0; i<s.length(); ++i){
+            if (map.containsKey(s.charAt(i))){
+                j = Math.max(j,map.get(s.charAt(i))+1);
             }
+            map.put(s.charAt(i),i);
+            max = Math.max(max,i-j+1);
         }
-
         return max;
     }
 

@@ -27,9 +27,14 @@ Note:
 You may assume k is always valid, 1 ≤ k ≤ array's length.
      */
     public static void main(String[] args) {
-        int[] arr = {3,2,3,1,2,4,5,5,6};
+        int[] arr = {5,6,4,3,2,1};
 
-        findKthLargest1(arr,3);
+        System.out.println(findKthLargest2(arr, 1));
+        System.out.println(findKthLargest2(arr, 2));
+        System.out.println(findKthLargest2(arr, 3));
+        System.out.println(findKthLargest2(arr, 4));
+        System.out.println(findKthLargest2(arr, 5));
+        System.out.println(findKthLargest2(arr, 6));
     }
     public static int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>((o1, o2) ->Integer.compare(o2,o1));
@@ -55,5 +60,69 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 
         return largeK.poll();
     }
+    public static int findKthLargest3(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>((a,b) ->  a-b);
 
+        for(int i=0;i<nums.length;i++){
+            pq.add(nums[i]);
+            if(pq.size() > k){
+                pq.remove();
+            }
+        }
+        return pq.peek();
+    }
+
+
+    /**
+     * using partition method like quick sort
+     * tc : best case o(n) at amortized cost worst case if we pick wrong pivot o(n^2)
+     * sc : o(1)
+     * @param nums
+     * @param k
+     * @return
+     */
+    public static int findKthLargest2(int[] nums, int k) {
+        return qSMethod(nums,0,nums.length-1,k);
+    }
+    private static int qSMethod(int[] nums,int low,int high,int k){
+        while (low <= high){
+            int partition = partition1(nums,low,high);
+            if(partition  == nums.length - k){
+                return nums[partition];
+            }
+
+            if(partition > nums.length-k){
+                //then target lies on left side
+                high = partition-1;
+            }
+            else{
+                //then target lies on right side
+                low = partition+1;
+            }
+        }
+        return -1;
+    }
+    private static int partition1(int[] nums,int low,int high){
+        int pivot = nums[high];
+        int i=low;
+        for(int j=low;j<high;j++){
+            if(nums[j] < pivot){
+                swap(nums,i,j);
+                i++;
+            }
+        }
+        swap(nums,i,high); // swap pivot and current i element
+        return i;
+    }
+    private static void swap(int[] arr,int i,int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+/*
+3,2,1,5,6,4
+
+2
+3
+ */
 }

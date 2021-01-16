@@ -1,37 +1,38 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PartitionLabels763 {
     public static void main(String[] args) {
         String str = "ababcbacadefegdehijhklij" ;
-        partitionLabels(str);
+        partitionLabels1(str);
     }
 
     /**
-     * TC : O(N= length of string)
-     * SC : O(26) constant space
+     * TC : LENGTH OF STRING
+     * SC O(26)
      * @param S
      * @return
      */
-    public static List<Integer> partitionLabels(String S) {
-        int[] arr = new int[26];
-        for(int i=0;i<S.length();i++){
-            arr[S.charAt(i)-'a'] = i;
-        }
+    public static List<Integer> partitionLabels1(String S) {
         List<Integer> ls = new ArrayList<>();
-        int currentMax = 0;
+        if(S == null){
+            return ls;
+        }
+        Map<Character,Integer> lastPositionIndexMap = new HashMap<>();
         for(int i=0;i<S.length();i++){
-            int count = 0;
-            while(i<=currentMax){
-                if(arr[S.charAt(i)-'a'] > currentMax){
-                    currentMax = arr[S.charAt(i)-'a'];
-                }
+            lastPositionIndexMap.put(S.charAt(i),i);
+        }
+        int i=0;
+        while(i<S.length()){
+            int maxLength = i;
+            int start = i;
+            while(i <= maxLength){
+                maxLength = Math.max(maxLength,lastPositionIndexMap.get(S.charAt(i)));
                 i++;
-                count++;
             }
-            currentMax++;
-            i--;
-            ls.add(count);
+            ls.add(maxLength-start+1);
         }
         return ls;
     }

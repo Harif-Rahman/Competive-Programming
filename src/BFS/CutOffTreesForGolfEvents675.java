@@ -26,6 +26,7 @@ public class CutOffTreesForGolfEvents675 {
      */
     public static int cutOffTree(List<List<Integer>> forest) {
         //Validation
+       PriorityQueue<Integer> pq1 = new PriorityQueue<>((a,b) -> a-b);
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2]-b[2]);
         for(int row = 0; row < forest.size(); row++){
             for(int col = 0; col < forest.get(row).size(); col++){

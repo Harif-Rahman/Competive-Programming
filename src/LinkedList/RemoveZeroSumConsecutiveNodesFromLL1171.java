@@ -31,16 +31,12 @@ Output: [1]
 //[1, 3, 2, -3, -2, 5, 5,-5, 1]
 public class RemoveZeroSumConsecutiveNodesFromLL1171 {
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(3);
-        listNode.next.next = new ListNode(2);
-        listNode.next.next.next = new ListNode(-3);
-        listNode.next.next.next.next = new ListNode(-2);
-        listNode.next.next.next.next.next = new ListNode(5);
-        listNode.next.next.next.next.next.next = new ListNode(5);
-        listNode.next.next.next.next.next.next.next = new ListNode(-5);
-        listNode.next.next.next.next.next.next.next.next= new ListNode(1);
-        removeZeroSumSublists(listNode);
+        //[1,0,0,-1,2,-1,0]
+        ListNode listNode = new ListNode(-1);
+        listNode.next = new ListNode(2);
+        listNode.next.next = new ListNode(-1);
+        listNode.next.next.next = new ListNode(0);
+        removeZeroSumSublists1(listNode);
     }
 
     /**
@@ -71,6 +67,44 @@ public class RemoveZeroSumConsecutiveNodesFromLL1171 {
         }
         return dummy.next;
     }
+
+    /**
+     * TC : O(N) + MAX LENGTH OF SUBARRAY HAVING SUM 0
+     * SC : WC: O(LENGTH OF LINKED LIST)
+     * @param head
+     * @return
+     */
+    public static ListNode removeZeroSumSublists1(ListNode head) {
+        Map<Integer,ListNode> map = new HashMap<>();
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        map.put(0,dummy);
+        ListNode curr = head;
+        int runningSum = 0;
+        while(curr != null){
+            runningSum += curr.val;
+            if(map.get(runningSum) != null){
+                ListNode preHead = map.get(runningSum);
+                ListNode temp = preHead.next;
+                int prevSum = runningSum;
+                while(temp != curr){
+                    prevSum += temp.val;
+                    map.remove(prevSum);
+                    temp = temp.next;
+                }
+                preHead.next = curr.next;
+            }else{
+                map.put(runningSum,curr);
+            }
+            curr = curr.next;
+        }
+        return dummy.next;
+    }
+
+
+
+
+
     private static class ListNode {
         int val;
         ListNode next;
