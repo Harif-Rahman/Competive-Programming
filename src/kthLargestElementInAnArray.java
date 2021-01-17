@@ -90,7 +90,6 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
             if(partition  == nums.length - k){
                 return nums[partition];
             }
-
             if(partition > nums.length-k){
                 //then target lies on left side
                 high = partition-1;
