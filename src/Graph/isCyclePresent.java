@@ -60,4 +60,45 @@ public class isCyclePresent {
         stateMap.put(pos,2); // completed state
         return false;
     }
+    Map<Integer,Integer> state = new HashMap<>();
+    public int solve(int A, ArrayList<ArrayList<Integer>> B) {
+        Map<Integer,List<Integer>> map = new HashMap<>();
+
+        for(List<Integer> nodes : B){
+            if(map.get(nodes.get(0)) == null){
+                map.put(nodes.get(0),new ArrayList<Integer>());
+            }
+            map.get(nodes.get(0)).add(nodes.get(1));
+        }
+        for(Integer node : map.keySet()){
+            if(state.get(node) == null){
+                if(isCycle(map,node)){
+                    return 1;
+                }
+
+            }
+        }
+        return 0;
+    }
+    /*
+    null - blank
+    1 - partial
+    2 - complated
+    */
+    private boolean isCycle(Map<Integer,List<Integer>> map,Integer node){
+        if(state.get(node) != null && state.get(node) == 1){
+            return true; // cycle
+        }
+        if(state.get(node) != null && state.get(node) == 2){
+            return false; // already visited
+        }
+        state.put(node,1);
+        for(Integer adjacent : map.get(node)){
+            if(isCycle(map,adjacent)){
+                return true;
+            }
+        }
+        state.put(node,2);
+        return false;
+    }
 }

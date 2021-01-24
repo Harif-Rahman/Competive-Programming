@@ -38,9 +38,9 @@ public class LongestPalindromicSubSequence516 {
          *     l       r
          *  if two characters are same then take 2(palindrome(l) + palindrome(r))    + inbetween substring result
          *  else
-         *   eg : b b a
-         *        l   r
-         *   one option take "bb"   or "ba"  (left,right-1) or (left+1,rigt)
+         *   eg : b b a a b d
+         *                  [b b a a b] d      b [b a a b d]
+         *   one option take "b b a a b"   or "b a a b d"  (left,right-1) or (left+1,rigt)
          */
         if(s.charAt(left) == s.charAt(right)){
             dp[left][right] =  2 + getPS(s,left+1,right-1,dp);
