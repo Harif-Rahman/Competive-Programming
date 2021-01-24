@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class clumsyFactorial1006 {
     /*
     Normally, the factorial of a positive integer n is the product of all positive integers less than or equal to n.  For example, factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1.
@@ -29,10 +31,10 @@ Explanation: 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println(factSubPart(4, 0));
     }
-
-    public static int factSubPart(int n, int sum) {
+    public static int factSubPart(int n,int sum){
+        if (n == 0)
+            return sum;
         int res = 0;
         int count = 1;
         while (n > 1 && count <= 3) {
@@ -56,9 +58,9 @@ Explanation: 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1
         if(count == 1 && n==1){
             sum--;
         }
-        return factSubPart(n,sum);
+        return factSubPart(--n, sum);
     }
-    public int clumsy1(int N) {
+    public static int clumsy1(int N) {
         int res = 0, cur = 0, index = -1;
         while (N > 0) {
             switch (++index % 4) {
@@ -80,6 +82,54 @@ Explanation: 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1
             N--;
         }
         return res + cur;
+    }
+    public static int clumsyUingStack(int N) {
+
+        if(N <= 1){
+            return N;
+        }
+        boolean positive = true;
+
+        char[] arr = {'*','/','+','-'};
+
+        Stack<Integer> st = new Stack<>();
+        st.push(N);
+        st.push(N-1);
+        int arrInd = 0;
+        N = N-2;
+        while(st.size() > 1 && N > -1){
+            switch(arr[arrInd]){
+                case '*':
+                    st.push(st.pop() * st.pop());
+                    arrInd++;
+                    break;
+                case '/':
+                    int e1 = st.pop();
+                    int e2 = st.pop();
+                    st.push(e2/e1);
+                    arrInd++;
+                    break;
+                case '+':
+                    st.push(st.pop() + st.pop());
+                    arrInd++;
+                    break;
+                case '-':
+                    int a1 = st.pop();
+                    int a2 = st.pop();
+                    st.push(a2-a1);
+                    arrInd++;
+                    break;
+            }
+            if(arrInd == arr.length){
+                //reset
+                arrInd = 0;
+            }
+            if(N > 0){
+                st.push(N);
+            }
+            N--;
+        }
+        return st.pop();
     }
     /**
      * TRICKY

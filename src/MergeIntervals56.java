@@ -43,6 +43,14 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
         return resArr;
     }
 
+    /**
+     * intervals length - n
+     *
+     * tc : nlogn + n -> nlogn
+     * sc : o(1)
+     * @param intervals
+     * @return
+     */
     public static int[][] merge1(int[][] intervals) {
         if (intervals.length <= 1)
             return intervals;
