@@ -1,3 +1,5 @@
+package sorting;
+
 class PancakeSorting {
 
     /* Reverses arr[0..i] */

@@ -68,4 +68,45 @@ public class topKFrequentElements347 {
         }
         return res;
     }
+
+    /**
+     * WORKING
+     * TC : o(nums)
+     * SC : o(nums)
+     * @param nums
+     * @param k
+     * @return
+     */
+    public int[] topKFrequentUsingBucketSort(int[] nums, int k) {
+
+        if(nums == null || nums.length == 0){
+            return null;
+        }
+        List<Integer>[] bucket = new ArrayList[nums.length+1];
+        Map<Integer,Integer> freqMap = new HashMap<>();
+        for(int i: nums){
+            freqMap.put(i,freqMap.getOrDefault(i,0)+1);
+        }
+        for(Map.Entry<Integer,Integer> entry : freqMap.entrySet()){
+            int key = entry.getKey();
+            int frequency = entry.getValue();
+            if(bucket[frequency] == null){
+                bucket[frequency] = new ArrayList<>();
+            }
+            bucket[frequency].add(key);
+        }
+        int[] res = new int[k];
+        int resi = 0;
+        for(int i=nums.length;i> 0 && resi < k;i--){
+            if(bucket[i] != null){
+                int size = bucket[i].size();
+                int j = 0;
+                while(resi < k && j < size){
+                    res[resi++] = bucket[i].get(j++);
+                }
+            }
+        }
+        return res;
+    }
+
 }
