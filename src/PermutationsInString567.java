@@ -35,71 +35,48 @@ The length of both given strings is in range [1, 10,000].
     public static void main(String[] args) {
         checkInclusion("an","eidbaooo");
     }
-    public static boolean checkInclusion(String s1, String s2) {
-        //s1 = "ab" s2 = "eidbaooo"
-        //s1 = "ab" s2 = "eidbaooo"
-        char[] org = s1.toCharArray();
-        Arrays.sort(org);
-        String goal = String.valueOf(org);
-        int i=0;
-        int j= s1.length()-1;
-        int[] arr = new int[26];
-        for(int p=0;p<s1.length();p++){
-            arr[s2.charAt(p)-'a']++;
-        }
-        while(j < s2.length()){
-            int count = 0;
-            boolean flag = true;
-            for(int q=0;q<26;q++){
-                int cnt = arr[q];
-                while(cnt-- > 0){
-                    if((char)(q+'a') != goal.charAt(count)){
-                        flag = false;
-                        break;
-                    }
-                    count++;
-                }
-            }
-            if(flag){
-                return true;
-            }
-            arr[s2.charAt(i)-'a']--;
-            i++;
-            if(++j < s2.length()){
-                arr[s2.charAt(j)-'a']++;
-            }
-        }
-        return false;
-    }
 
     /**
-     * BEST
+     * WORKING
+     * TC : O(S1 + S2 LENGTH)
+     * SC : O(26)  --> O(1) constant
      * @param s1
      * @param s2
      * @return
      */
-    public boolean checkInclusion1(String s1, String s2) {
-        int[] arr1 = new int[26];
-        int[] arr2 = new int[26];
-
-        for(char c: s1.toCharArray()) {
-            arr1[c-'a']++;
+    public static boolean checkInclusion(String s1, String s2) {
+        if(s1.length() > s2.length()){
+            return false;
+        }
+        int i=0;
+        int[] s1Arr = new int[26];
+        for(int p =0;p<s1.length();p++){
+            s1Arr[s1.charAt(p) - 'a']++;
         }
 
-        int start = 0, end =0;
-        while(end<s2.length()) {
-            arr2[s2.charAt(end) - 'a']++;
-            if (end-start==s1.length()-1) {
-                if (Arrays.equals(arr1,arr2)) {
-                    return true;
-                }
-                arr2[s2.charAt(start) - 'a']--;
-                start++;
+        int[] s2Arr = new int[26];
+
+        for(int p =0;p<s1.length()-1;p++){
+            s2Arr[s2.charAt(p) - 'a']++;
+        }
+
+
+        for(int j=s1.length()-1;j<s2.length();j++){
+            s2Arr[s2.charAt(j) - 'a']++;
+            if(isAnagram(s1Arr,s2Arr)){
+                return true;
             }
-
-            end++;
+            s2Arr[s2.charAt(i) - 'a']--;
+            i++;
         }
-
         return false;
+    }
+    private static boolean isAnagram(int[] s1Arr,int[] s2Arr){
+        for(int i=0;i<26;i++){
+            if(s1Arr[i] != s2Arr[i]){
+                return false;
+            }
+        }
+        return true;
     }
 }

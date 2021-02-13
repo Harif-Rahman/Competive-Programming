@@ -15,6 +15,16 @@ public class LetterCombinationsOfPhoneNumeber17 {
         return res;
     }
 
+    /**
+     * backtracking approach
+     *
+     * tc : branches will go upto the length 4 so 4 ^ digits length
+     *
+
+     * @param digits
+     * @param str
+     * @param ind
+     */
     private static void helper(String digits,String str,int ind){
         if(ind == digits.length()){
             res.add(str);

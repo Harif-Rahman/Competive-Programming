@@ -1,43 +1,48 @@
 package DFS;
 
 public class LongestIncreasingPathInMatrix {
+    public static final int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+
     public static void main(String[] args) {
-        int[][] arr = {
-                {9,9,4},
-                {6,6,8},
-                {2,1,1}
+        int[][] matrix ={
+                {1}
         };
-        System.out.println(longestIncreasingPath(arr));
+        longestIncreasingPath(matrix);
     }
+
     public static int longestIncreasingPath(int[][] matrix) {
-        int[][] cache = new int[matrix.length][matrix[0].length];
+        int[][] dp = new int[matrix.length][matrix[0].length];
         int maxPath = 0;
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
-                int path = dfs(matrix,i,j,Integer.MAX_VALUE,cache);
-                maxPath = Math.max(path,maxPath);
+                maxPath = Math.max(maxPath,dfs(matrix,dp,i,j,Integer.MAX_VALUE));
             }
         }
         return maxPath;
     }
-    private static int dfs(int[][] matrix,int r,int c,int prev,int[][] cache){
+    private static int dfs(int[][] matrix,int[][] dp,int i,int j,int prev){
+        // check boundary cases
+        if(i < 0 || i >= dp.length || j < 0 || j>= dp[0].length){
+            return 0;
+        }
+        if(prev <= matrix[i][j]){
+            return 0;
+        }
+        if(dp[i][j] > 1){
+            return dp[i][j];
+        }
+        int left = dfs(matrix,dp,i,j-1,matrix[i][j]);
+        int right = dfs(matrix,dp,i,j+1,matrix[i][j]);
+        int top = dfs(matrix,dp,i-1,j,matrix[i][j]);
+        int bottom = dfs(matrix,dp,i+1,j,matrix[i][j]);
 
-        if(r < 0 || c < 0 || r >= matrix.length || c >= matrix[0].length){
-            return 0;
-        }
-        if(prev <= matrix[r][c]){ //checking for decreasing
-            return 0;
-        }
-        if(cache[r][c] > 0){ //memoization
-            return cache[r][c];
-        }
-        int maxPath = 0;
-        maxPath = Math.max(maxPath,dfs(matrix,r-1,c,matrix[r][c],cache));
-        maxPath = Math.max(maxPath,dfs(matrix,r+1,c,matrix[r][c],cache));
-        maxPath = Math.max(maxPath,dfs(matrix,r,c-1,matrix[r][c],cache));
-        maxPath = Math.max(maxPath,dfs(matrix,r,c+1,matrix[r][c],cache));
-        cache[r][c] = maxPath + 1;
-        return cache[r][c];
+        int max = 0;
+        max = Math.max(max,left);
+        max = Math.max(max,right);
+        max = Math.max(max,top);
+        max = Math.max(max,bottom);
+        dp[i][j] = max + 1;
+        return dp[i][j];
     }
 
 }

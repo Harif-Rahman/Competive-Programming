@@ -18,7 +18,8 @@ If there are many valid answers, return any of them. If it is impossible to fini
  */
 public class CourseSchedule210 {
     /**
-     * tc : O(numCourses + )
+     * tc : O(V + E)
+     * SC : O(V + E)
      * @param numCourses
      * @param prerequisites
      * @return

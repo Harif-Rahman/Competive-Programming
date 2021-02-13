@@ -38,9 +38,78 @@ public class StringToAtoi {
     }
 
     public static void main(String[] args) {
-        System.out.println(myAtoi(
+        int max = Integer.MIN_VALUE;
+        System.out.println(myAtoi1(
                 "2147483646"));
     }
+    public static int myAtoi1(String s) {
+        if(s == null || s.length() == 0){
+            return 0;
+        }
+        int left = 0;
+
+        for(;left<s.length();left++){
+            if(s.charAt(left) == ' '){
+                continue;
+            }
+            break;
+        }
+        boolean isNegative = false;
+        if(left < s.length()){
+            if(s.charAt(left) == '-'){
+                isNegative = true;
+                left++;
+            }else{
+                if(s.charAt(left) == '+'){
+                    left++;
+                }
+            }
+        }
+        for(;left<s.length();left++){
+            if(s.charAt(left) == '0'){
+                continue;
+            }
+            break;
+        }
+        //s.charAt(left) == '0'
+
+
+        Integer res = 0;
+
+        if(left < s.length() && !(s.charAt(left) >= '0' && s.charAt(left) <='9')){
+            return res;
+        }
+
+        for(;left<s.length() && Character.isDigit(s.charAt(left));left++){
+            res += Character.getNumericValue(s.charAt(left));
+            if(isOverflow(res,10)){
+                return isNegative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+            }
+            res = res *10;
+        }
+        res /=10;
+
+        return isNegative ? -1 * res : res;
+    }
+    public static boolean isOverflow( int a, int b)
+    {
+        // Check if either of them is zero
+        if (a == 0 || b == 0)
+            return false;
+        int result = a * b;
+        if (a == result / b)
+            return false;
+        else
+            return true;
+    }
+    /*
+    1) i need to trim the leading white spaces
+    2) i need to trim the leading zeros
+    3) find the sign of integer
+    4) ignore the alpha characters
+    5) if the string goes more than maximum or minimum then return int max and min
+    6) if the string starts with alphabest other than digit then return 0;
+    */
     //2147483647
     //21474836460 res
 

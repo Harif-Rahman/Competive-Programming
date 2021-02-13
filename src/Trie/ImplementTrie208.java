@@ -1,6 +1,6 @@
 package Trie;
 
-public class AddAndSearchWord211 {
+public class ImplementTrie208 {
     public static void main(String[] args) {
         Trie Trie = new Trie();
         Trie.insert("apple");
