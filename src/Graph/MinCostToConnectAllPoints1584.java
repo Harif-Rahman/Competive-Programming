@@ -18,70 +18,74 @@ public class MinCostToConnectAllPoints1584 {
     public static void main(String[] args) {
         //[[0,0],[2,2],[3,10],[5,2],[7,0]]
         int[][] arr ={{0,0},{2,2},{3,10},{5,2},{7,0}};
+        //              i     j
         minCostConnectPoints(arr);
 
     }
+
+    /**
+     * kruskal algorithm
+     * WORKING
+     * N = POINTS LENTH
+     * TC : FOR POPULATING PRIORITY QUEUE N * N* LOGN -> N^2 LOGN   + N*LOGN
+     *
+     * @param points
+     * @return
+     */
     public static int minCostConnectPoints(int[][] points) {
-        PriorityQueue<Pair<Integer,Integer>> pq = new PriorityQueue<>(new Comparator<Pair<Integer, Integer>>() {
-            @Override
-            public int compare(Pair<Integer, Integer> o1, Pair<Integer, Integer> o2) {
-                int dist1 = getDistance(points,o1.getKey(),o1.getValue());
-                int dist2 = getDistance(points,o2.getKey(),o2.getValue());
-                return dist1-dist2;
-            }
-        });
+        PriorityQueue<Pair<Integer,Integer>> pq = new PriorityQueue<>((p1,p2) -> getDistance(points,p1) - getDistance(points,p2));
         for(int i=0;i<points.length;i++){
             for(int j=i+1;j<points.length;j++){
                 pq.add(new Pair<>(i,j));
             }
         }
-
-        int totalVertices = points.length;
-        int minCost = 0;
-        Set<Integer> set = new HashSet<>();
-        int totEdges = 0;
-
-
         int[] parent = new int[points.length];
-        Arrays.fill(parent,-1);
-        int lastparent = -1;
-        while (!pq.isEmpty()){
+        UnionFind unionFind = new UnionFind(parent);
+        Set<String> set = new HashSet<>();
+        int totCost = 0;
+        int totalEdges = points.length-1;
+        while(!pq.isEmpty() && totalEdges > 0){ // for MST TOTAL EDGES SHOULD BE TOTAL NODES -1
             Pair<Integer,Integer> pair = pq.remove();
             int ind1 = pair.getKey();
             int ind2 = pair.getValue();
-            if(isCycle(parent,ind1,ind2)){
-                // it could form cycle
-                continue;
-            }
-            minCost += getDistance(points,ind1,ind2);
-            totEdges++;
+            String str1 = ind1 + "->" + ind2;
+            String str2 = ind2 + "->" + ind1;
 
-            set.add(ind1);
-            set.add(ind2);
-
-            parent[ind1] = lastparent;
-            parent[ind2] = ind1;
-            lastparent = ind1;
-
-            //SPANNING TREE PROPERTY --> edges should be equal to vertices - 1
-            if(totEdges == totalVertices-1){
-                break;
+            if(set.add(str1) && set.add(str2) && unionFind.union(ind1,ind2)){
+                totCost += getDistance(points,pair);
+                totalEdges--;
             }
         }
-        return minCost;
+        return totCost;
     }
-    private static boolean isCycle(int[] parent,int i,int j){
-        if(parent[i] == -1 && parent[j] == -1){
-            return i==j;
+    private static int getDistance(int[][] points,Pair<Integer,Integer> pair){
+        int[] p1 = points[pair.getKey()];
+        int[] p2 = points[pair.getValue()];
+        return Math.abs(p2[0]-p1[0]) + Math.abs(p2[1]-p1[1]);
+    }
+    static class UnionFind{
+        int[] parent ;
+        UnionFind(int[] parent){
+            this.parent = parent;
+            for(int i=0;i<parent.length;i++){
+                parent[i] = i;
+            }
         }
-        return isCycle(parent,i == -1 ? -1 : parent[i],j == -1 ? -1 :parent[j]);
-    }
-    private static int getDistance(int[][] points,int ind1,int ind2){
-        int[] p1 = points[ind1];
-        int[] p2 = points[ind2];
 
-        int r1 = Math.abs(p2[0]-p1[0]);
-        int r2 = Math.abs((p2[1] - p1[1]));
-        return  r1 + r2;
+        private boolean union(int A,int B){
+            int findA = find(A);
+            int findB = find(B);
+            if(findA == findB){
+                return false;
+            }
+            parent[findA] = findB;
+            return true;
+        }
+        private int find(int node){
+            if(parent[node] == node){
+                return node;
+            }
+            return find(parent[node]);
+        }
     }
 }

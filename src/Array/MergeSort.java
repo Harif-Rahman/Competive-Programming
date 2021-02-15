@@ -53,7 +53,5 @@ public class MergeSort {
             nums[i] = tempArr[ind++];
         }
         System.out.println(nums);
-        String str ="";
-        str.replace("","n");
     }
 }

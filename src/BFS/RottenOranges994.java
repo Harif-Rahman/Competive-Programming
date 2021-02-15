@@ -1,5 +1,7 @@
 package BFS;
 
+import javafx.util.Pair;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -36,51 +38,58 @@ Explanation:  Since there are already no fresh oranges at minute 0, the answer i
     public static void main(String[] args) {
 
     }
-    public int orangesRotting(int[][] grids) {
-        if(grids == null || grids.length == 0) return 0;
-        int rowLen = grids.length;
-        int colLen = grids[0].length;
-        boolean[][] visited = new boolean[rowLen][colLen];
-        int countFresh = 0;
-        Queue<int[]> queue = new LinkedList<>();
-        for(int i=0;i<grids.length;i++){
-            for(int j=0;j<grids[0].length;j++){
-                if(grids[i][j] == 2){
-                    //rotten
-                    visited[i][j] = true;
-                    queue.add(new int[]{i,j});
-                }
-                if(grids[i][j] == 1){
-                    countFresh++; //count fresh orange
+
+    /** WORKING
+     * TC : n = grid row length m - grid col length
+     * tc : (m*n + m *n)
+     *
+     * @param grid
+     * @return
+     */
+    public int orangesRotting(int[][] grid) {
+        int freshOranges = 0;
+        Queue<Pair<Integer,Integer>> queue = new LinkedList<>();
+
+        for(int i=0;i<grid.length;i++){
+            for(int j=0;j<grid[0].length;j++){
+                if(grid[i][j] == 2){
+                    queue.add(new Pair<>(i,j));
+                }else{
+                    if(grid[i][j] == 1){
+                        freshOranges++;
+                    }
                 }
             }
         }
-        if(countFresh == 0){
-            // if there is no fresh orange return 0
+
+
+        if(freshOranges == 0){
             return 0;
         }
-
-        int[][] dirs = {{-1,0},{0,-1},{1,0},{0,1}}; // four directions
-        int level = -1;
+        int level = 0;
+        int[][] dirs = {{1,0},{0,1},{-1,0},{0,-1}};
         while(!queue.isEmpty()){
             int size = queue.size();
             for(int i=0;i<size;i++){
-                int[] cell = queue.remove();
+                Pair<Integer,Integer> pop = queue.remove();
+                int row = pop.getKey();
+                int col = pop.getValue();
+
                 for(int[] dir : dirs){
-                    int row = cell[0]+dir[0];
-                    int col = cell[1]+dir[1];
-                    if(row >= 0 && row < rowLen && col >= 0 && col < colLen){
-                        if(grids[row][col] == 1 && !visited[row][col]){
-                            grids[row][col] = 2;
-                            countFresh--;
-                            visited[row][col] = true;
-                            queue.add(new int[]{row,col});
+                    int nr = row + dir[0];
+                    int nc = col + dir[1];
+                    if(nr >= 0 && nc >= 0 && nr < grid.length && nc < grid[0].length){
+                        // if orange is fresh then make it rotten
+                        if(grid[nr][nc] == 1){
+                            grid[nr][nc] = 2;
+                            freshOranges--;
+                            queue.add(new Pair<>(nr,nc));
                         }
                     }
                 }
             }
             level++;
         }
-        return countFresh == 0  ? level : -1;
+        return freshOranges == 0 ? level-1 : -1;
     }
 }
