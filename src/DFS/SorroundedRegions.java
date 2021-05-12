@@ -35,37 +35,58 @@ Surrounded regions shouldn’t be on the border, which means that any 'O' on the
 
         System.out.println(board);
     }
+
+    /**
+     *
+     * intuition is check only the boundary because only boundary cell will not be sorrounded by X
+     * WORKING
+     * TC : M - ROWS N - COL - M*N TC
+     * @param board
+     */
     public static void solve(char[][] board) {
-        int rlen = board.length;
-        int clen = board[0].length;
-        boolean[][] visited = new boolean[rlen][clen];
-        for(int i=0;i<rlen;i++){
-            for(int j=0;j<clen;j++){
+        if(board == null || board.length == 0){
+            return;
+        }
+       // row will be constant col will change
+        for(int i=0;i<board[0].length;i++){
+            dfs(board,0,i);
+        }
+        // row will be constant col will change
+        for(int i=0;i<board[0].length;i++){
+            dfs(board,board.length-1,i);
+        }
+        // col willl be constant
+        for(int i=0;i<board.length;i++){
+            dfs(board,i,0);
+        }
+        for(int i=0;i<board.length;i++){
+            dfs(board,i,board[0].length-1);
+        }
+        for(int i=0;i<board.length;i++){
+            for(int j = 0;j<board[0].length;j++){
+                // check only boundaries
                 if(board[i][j] == 'O'){
-                    isSurrounded(board,i,j,visited);
-                    System.out.println(board);
+                    board[i][j] = 'X';
+                }
+                if(board[i][j] == 'M'){
+                    board[i][j] = 'O';
                 }
             }
         }
-    }
-    private static boolean isSurrounded(char[][] board,int r,int c,boolean[][] visited){
-        System.out.println("row -->"+r+" col --->"+c);
-        if(r < 0 || c < 0 || r >= board.length || c >= board[0].length || visited[r][c]){
-            return false;
-        }
-        if(board[r][c] == 'X'){
-            return true;
-        }
-        visited[r][c] = true;
 
-        boolean top = isSurrounded(board,r-1,c,visited);
-        boolean bottom = isSurrounded(board,r+1,c,visited);
-        boolean left = isSurrounded(board,r,c-1,visited);
-        boolean right = isSurrounded(board,r,c+1,visited);
-        if( left && right && top && bottom){
-            board[r][c] = 'X';
-            return true;
+    }
+    private static void dfs(char[][] board,int i,int j){
+        System.out.println("row -> "+i + "col ->"+j);
+   /*     if(i < 0 || i >= board.length || j < 0 || j >= board[0].length){
+            return;
         }
-        return false;
+        if(board[i][j] == 'M' || board[i][j] == 'X'){
+            return;
+        }
+        board[i][j] = 'M';
+        dfs(board,i-1,j);
+        dfs(board,i+1,j);
+        dfs(board,i,j-1);
+        dfs(board,i,j+1);*/
     }
 }

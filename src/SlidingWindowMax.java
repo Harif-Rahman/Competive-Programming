@@ -73,11 +73,39 @@ public class SlidingWindowMax {
         // Print the maximum element of last window
         System.out.print(arr[Qi.peek()]);
     }
+    public static int[] maxSlidingWindow1(int[] nums, int k) {
+        Deque<Integer> integerDeque = new LinkedList<>();
+        int i=0;
+        for(;i<k-1;i++){
+            while (!integerDeque.isEmpty() && nums[i] > nums[integerDeque.getLast()]){
+                integerDeque.removeLast();
+            }
+            integerDeque.addLast(i);
+        }
+        int[] res = new int[nums.length-k+1];
+        int resInd = 0;
+        for(;i<nums.length;i++){
+            // remove the elements which is out of the window
+            while (!integerDeque.isEmpty() && integerDeque.getFirst() <= i-k){
+                integerDeque.removeFirst();
+            }
+
+            // push the max element to the first
+            while (!integerDeque.isEmpty() && nums[i] > nums[integerDeque.getLast()]){
+                integerDeque.removeLast();
+            }
+
+            integerDeque.addLast(i);
+            res[resInd++] = nums[integerDeque.getFirst()];
+        }
+        return res;
+    }
 
     // Driver code
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6};
+        int arr[] = {1,3,-1,-3,5,3,6,7};
         int k = 3;
+        maxSlidingWindow1(arr,k);
     }
 
 }

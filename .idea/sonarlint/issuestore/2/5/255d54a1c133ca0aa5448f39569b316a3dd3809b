@@ -1,0 +1,6 @@
+
+X	java:S125	"<This block of commented-out lines of code should be removed.(´µ8¯Ú¹×ú.
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(òëŸğ8’¹×ú.
+”
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(³Š«É8ï¹×ú.

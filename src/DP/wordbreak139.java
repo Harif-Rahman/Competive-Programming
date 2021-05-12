@@ -30,7 +30,7 @@ Output: false
  */
 public class wordbreak139 {
     public static void main(String[] args) {
-        wordBreak("leetcode", Arrays.asList(new String[]{"leet","code"}));
+        wordBreak("applepenapple", Arrays.asList(new String[]{"pen","apple"}));
     }
     public static boolean wordBreak(String s, List<String> wordDict) {
         boolean[] dp = new boolean[s.length()+1];

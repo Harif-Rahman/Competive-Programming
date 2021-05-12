@@ -1,0 +1,10 @@
+
+Z
+java:S1128"?Remove this unused import 'java.util.concurrent.BlockingQueue'.(÷ÙÑÿÿÿÿÿ
+`
+java:S1128"ERemove this unused import 'java.util.concurrent.LinkedBlockingQueue'.(ŸØšüÿÿÿÿ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(Áš¬¸
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(ı”¢
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(¥ñûÇøÿÿÿÿ
+M
+java:S1197"8Move the array designator from the variable to the type.(ÈòØS

@@ -1,128 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c5646821-a832-4d1d-a3ae-af664920ece3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AwareBudgetCuts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS/KnightOnChessBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS/RottenOranges994.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS/TimeNeededToInformAllEmplloyees1376.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BST/SumRootToLeafNumbers1022.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BST/TrimBST669.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CircularArrayLoop457.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountOfSmallestNumerAfterSelf315.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountingElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/LetterCombinationsOfPhoneNumeber17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/LongestIncreasingPathInMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/MaximumAreaOfIsland695.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/NoOfIsland200.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/RiverSizes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/SorroundedRegions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/SubSet78.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS/WordSearch79.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/MaximalSquare221.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/MinNofCoinsChange322.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/UniquePath63.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/ValidPathInGrid1391.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/ZeroOneMatrix542.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DecodeStringAtIndex880.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiagonalTraverse1424.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DisplayTableOfFoodOrders1418.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DistantBarcodes1054.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindAllAnagramsInString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindKClosestElements658.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindMissingAndRepeatedNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindSqaureRootOfNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FirsttMissingPostive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FourSum18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/AllPathsFromSourceToTarget797.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/CloneGraph133.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InsertDeleteRandom380.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InvalidTransaction1169.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IsSubSequence392.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JumpGame45.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KClosestPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KlarnaQuestionMarkissue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LargestNumberFormedFromArray179.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LargestRectangleInHistogram84.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeftMostColWithOneBinaryMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/BrowserHistory1472.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/MergeKSortedList23.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/NumberOfRecentCalls933.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/ReverseNodesInKGroup25.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestAbsoluteValueFilePath388.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestSubStringContainingVowelCount1371.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestSubStringWithoutRepCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestSubstringContainingAllCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestWellPerformingInterval1124.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaximumLengthOfConcatenatedStringWithUniqueCharacters1239.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaximumProductOfWordLength318.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MinNoStepsToMakeAnagram1347.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MinStackImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MinimumWindowSubString76.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyCalendar729.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyPower50.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PartitionLabels763.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PathWithMaximumGold1219.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PermutationsInString567.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pramp/FlattenDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pramp/SmallestPositiveInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RankTransformOfAnArray1331.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RemoveKDigits402.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReverseBits190.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ScoresAfterFlippingMatrix861.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShortestUnsortedContinousSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LongestSubstringWithoutRepeatingCharacters3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/MaximumConsecutiveOnes1004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpiralMatrix59.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SquarerootOfNumber69.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringShift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreeSum15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThreeSumClosest16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/AllNodeDistanceKInBinaryTree863.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/CheapestFlightWithKStops787.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/ConvertSortedListToBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/IncreasingOrderSearchTree897.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/LinkedListInBinaryTree1367.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/PseudoPalidromicPath1457.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/SmalllestStringStartingFromRootToLeaf988.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trie/AddAndSearchWord211.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trie/LongestWordInDictionary720.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ValidateIPAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ValidateParanthesis678.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ZeroOneMatrix542.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ZigZagConversion6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/MeetingRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/MeetingRoom2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/SpecialPositionsInBinaryMatrix1582.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/SumOfArrayWithoutLoops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtracking/LetterCasePermutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/multithreading/CountDownLatchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/multithreading/PrintZeroEvenOdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/StackUsingQueue225.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/AlphabetBoardPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/AlphabetBoardPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/CarPooling1094.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/CarPooling1094.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/FrequencySortCharacters451$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/FrequencySortCharacters451$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/FrequencySortCharacters451.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/FrequencySortCharacters451.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/HandsOfStraight$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/HandsOfStraight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MaximumProductOfThreeNumbers628.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MaximumProductOfThreeNumbers628.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PartitionList86.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/PartitionList86.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/RemoveDuplicatesFromSortedArr26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/RemoveDuplicatesFromSortedArr26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/ShiftingLetters848.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/ShiftingLetters848.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SubArraySumEqualsK.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SubArraySumEqualsK.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/BinaryTreePruning814$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/BinaryTreePruning814$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/WordCountEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/WordCountEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarPooling1094.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarPooling1094.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FrequencySortCharacters451.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FrequencySortCharacters451.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandsOfStraight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MaximumProductOfThreeNumbers628.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaximumProductOfThreeNumbers628.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PartitionList86.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PartitionList86.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RemoveDuplicatesFromSortedArr26.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveDuplicatesFromSortedArr26.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShiftingLetters848.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShiftingLetters848.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubArraySumEqualsK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubArraySumEqualsK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryTreePruning814.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinaryTreePruning814.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordCountEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BFS/RottenOranges994.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/BFS/RottenOranges994.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BFS/TimeNeededToInformAllEmplloyees1376.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/ConvertBinaryNumberLLtoInteger1290.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/ConvertBinaryNumberLLtoInteger1290.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LetterCombinationsOfPhoneNumeber17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LetterCombinationsOfPhoneNumeber17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LongestIncreasingPathInMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LongestIncreasingPathInMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DFS/SorroundedRegions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DFS/SorroundedRegions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/LongestIncreasingSubSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DP/LongestIncreasingSubSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/MinNofCoinsChange322.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DP/MinNofCoinsChange322.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/ZeroOneMatrix542.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/wordbreak139.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DP/wordbreak139.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/InsertInterval57.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/InsertInterval57.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/KClosestPoints$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/KClosestPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LargestNumberFormedFromArray179.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LargestNumberFormedFromArray179.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LargestRectangleInHistogram84.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LargestRectangleInHistogram84.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/META-INF/JavaLearning.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MaximumSlidingWindow239.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MaximumSlidingWindow239.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MergeIntervals56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MergeIntervals56.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MinimumWindowSubString76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MinimumWindowSubString76.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MyPower50.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MyPower50.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PancakeSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PartitionLabels763.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/PartitionLabels763.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PermutationsInString567.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/PermutationsInString567.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Pramp/FlattenDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Pramp/FlattenDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SlidingWindow/LongestSubstringWithoutRepeatingCharacters3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SlidingWindow/LongestSubstringWithoutRepeatingCharacters3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146$SnapshotArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146$SnapshotArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/StringToAtoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/StringToAtoi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/AllNodeDistanceKInBinaryTree863$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/AllNodeDistanceKInBinaryTree863.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/AllNodeDistanceKInBinaryTree863.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/CheapestFlightWithKStops787.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/CheapestFlightWithKStops787.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/AddAndSearchWord211$Trie$TrieNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/AddAndSearchWord211$Trie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/AddAndSearchWord211.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720$Trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720$Trie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/clumsyFactorial1006.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/clumsyFactorial1006.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/kthLargestElementInAnArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/kthLargestElementInAnArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/topKFrequentElements347.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/topKFrequentElements347.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS/SorroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/SorroundedRegions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/LongestIncreasingSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/LongestIncreasingSubSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/wordbreak139.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/wordbreak139.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multithreading/ProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multithreading/ProducerConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="249" />
@@ -155,11 +113,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1Y4el5DKb4ZKOHs2AaS2dlncvpr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
@@ -180,7 +140,7 @@
       <recent name="DP" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SnapShotArray1146">
+  <component name="RunManager" selected="Application.OpenLock752">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -202,12 +162,12 @@
       <module name="" />
       <method v="2" />
     </configuration>
-    <configuration name="AddAndSearchWord211" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Trie.AddAndSearchWord211" />
+    <configuration name="LongestIncreasingSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.LongestIncreasingSubSequence" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Trie.*" />
+          <option name="PATTERN" value="DP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,12 +175,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MagicDictionary676" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Trie.MagicDictionary676" />
+    <configuration name="OpenLock752" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BFS.OpenLock752" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Trie.*" />
+          <option name="PATTERN" value="BFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,12 +188,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveZeroSumConsecutiveNodesFromLL1171" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.RemoveZeroSumConsecutiveNodesFromLL1171" />
+    <configuration name="StackUsingQueue225" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.StackUsingQueue225" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmallestPositiveInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Pramp.SmallestPositiveInteger" />
+    <configuration name="SumOfArrayWithoutLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.SumOfArrayWithoutLoops" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Pramp.*" />
+          <option name="PATTERN" value="Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,23 +214,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SnapShotArray1146" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SnapShotArray1146" />
+    <configuration name="wordbreak139" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.wordbreak139" />
       <module name="JavaLearning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SnapShotArray1146" />
-        <item itemvalue="Application.MagicDictionary676" />
-        <item itemvalue="Application.AddAndSearchWord211" />
-        <item itemvalue="Application.SmallestPositiveInteger" />
-        <item itemvalue="Application.RemoveZeroSumConsecutiveNodesFromLL1171" />
+        <item itemvalue="Application.OpenLock752" />
+        <item itemvalue="Application.SumOfArrayWithoutLoops" />
+        <item itemvalue="Application.LongestIncreasingSubSequence" />
+        <item itemvalue="Application.wordbreak139" />
+        <item itemvalue="Application.StackUsingQueue225" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -376,134 +354,28 @@
       <workItem from="1594982619376" duration="14000" />
       <workItem from="1595008349561" duration="5382000" />
       <workItem from="1595349412054" duration="2080000" />
+      <workItem from="1613390649860" duration="15416000" />
+      <workItem from="1613570365067" duration="5039000" />
+      <workItem from="1615461645233" duration="395000" />
+      <workItem from="1617891564850" duration="918000" />
+      <workItem from="1620323488934" duration="818000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#Project_Structure" timestamp="1593360493973">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="440" y="190" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1593360493973" />
-    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591628071144">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591628071144" />
-    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1589114861033">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1589114861033" />
-    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1680.974@0.23.1680.974" timestamp="1588485472441" />
-    <state x="578" y="313" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587837932526">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="578" y="313" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1587837932526" />
-    <state x="614" y="417" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589114296063">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="614" y="417" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050@0.0.1680.1050" timestamp="1589114296063" />
-    <state x="0" y="0" width="476" height="1050" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592848948099">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="0" y="0" width="476" height="1050" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1592848948099" />
-    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589010342811">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589010342811" />
-    <state x="988" y="418" width="552" height="480" key="#xdebugger.evaluate" timestamp="1595350310318">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state x="403" y="570" width="552" height="480" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1593550366471" />
-    <state x="988" y="418" key="#xdebugger.evaluate/0.23.1680.974@0.23.1680.974" timestamp="1595350310318" />
-    <state width="452" height="466" key="DebuggerActiveHint" timestamp="1589733833878">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="452" height="466" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1589733833878" />
-    <state width="1638" height="114" key="GridCell.Tab.0.bottom" timestamp="1595408501480">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946357" />
-    <state width="1638" height="114" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1595408501480" />
-    <state width="1638" height="114" key="GridCell.Tab.0.center" timestamp="1595408501480">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946356" />
-    <state width="1638" height="114" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1595408501480" />
-    <state width="1638" height="114" key="GridCell.Tab.0.left" timestamp="1595408501479">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946356" />
-    <state width="1638" height="114" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1595408501479" />
-    <state width="1638" height="114" key="GridCell.Tab.0.right" timestamp="1595408501480">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="293" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946357" />
-    <state width="1638" height="114" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1595408501480" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1595408501475">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="407" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946289" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.23.1680.974@0.23.1680.974" timestamp="1595408501475" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1595408501475">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="407" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946286" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center/0.23.1680.974@0.23.1680.974" timestamp="1595408501475" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1595408501474">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="407" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946284" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left/0.23.1680.974@0.23.1680.974" timestamp="1595408501474" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1595408501475">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state width="1638" height="407" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594614946288" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right/0.23.1680.974@0.23.1680.974" timestamp="1595408501475" />
-    <state width="1638" height="192" key="GridCell.Tab.2.bottom" timestamp="1589393511300">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="192" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589393511300" />
-    <state width="1638" height="192" key="GridCell.Tab.2.center" timestamp="1589393511298">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="192" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589393511298" />
-    <state width="1638" height="192" key="GridCell.Tab.2.left" timestamp="1589393511296">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="192" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589393511296" />
-    <state width="1638" height="192" key="GridCell.Tab.2.right" timestamp="1589393511299">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="192" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589393511299" />
-    <state x="328" y="106" key="SettingsEditor" timestamp="1590688937848">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="328" y="106" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590688937848" />
-    <state width="708" height="480" key="SwitcherDM" timestamp="1592490388777">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="708" height="480" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1592490388777" />
-    <state x="519" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1594982618171">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state x="519" y="354" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591636280715" />
-    <state x="519" y="354" key="com.intellij.ide.util.TipDialog/0.23.1680.974@0.23.1680.974" timestamp="1594982618171" />
-    <state x="100" y="100" width="1480" height="850" key="dock-window-1" timestamp="1591554924699">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state x="100" y="100" width="1480" height="850" key="dock-window-1/0.23.1680.974@0.23.1680.974" timestamp="1591554924699" />
-    <state x="506" y="285" width="667" height="486" key="find.popup" timestamp="1594823380411">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state x="506" y="282" width="667" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1591621759949" />
-    <state x="506" y="285" width="667" height="486" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1594823380411" />
-    <state x="505" y="233" width="766" height="676" key="search.everywhere.popup" timestamp="1595349419516">
-      <screen x="0" y="23" width="1680" height="974" />
-    </state>
-    <state x="505" y="233" width="766" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593588492545" />
-    <state x="505" y="233" width="766" height="676" key="search.everywhere.popup/0.23.1680.974@0.23.1680.974" timestamp="1595349419516" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1369,16 +1241,6 @@
           <option name="timeStamp" value="871" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Tree/AllNodeDistanceKInBinaryTree863.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="876" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Tree/AllNodeDistanceKInBinaryTree863.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="878" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tree/BinaryTreeColoringGame1145.java</url>
           <line>17</line>
           <option name="timeStamp" value="888" />
@@ -1874,11 +1736,6 @@
           <option name="timeStamp" value="1267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DFS/SorroundedRegions.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="1271" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/IsSubSequence392.java</url>
           <line>13</line>
           <option name="timeStamp" value="1272" />
@@ -1958,6 +1815,126 @@
           <line>43</line>
           <option name="timeStamp" value="1321" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList/SortLinkedList148.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1553" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/BubbleSort.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="1556" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/InsertionSort.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1558" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/SelectionSort.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="1559" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Pramp/FlattenDictionary.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Pramp/FlattenDictionary.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1562" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Graph/MinCostToConnectAllPoints1584.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="1566" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/multithreading/ProducerConsumer.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="1568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/multithreading/ProducerConsumer.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="1569" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/multithreading/ProducerConsumer.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="1570" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/multithreading/ProducerConsumer.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="1571" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/KWeakestRowInAMatrix1337.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="1576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindowMax.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1589" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindowMax.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="1591" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/backtracking/LetterCasePermutation.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1597" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/QuickSort.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1598" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/QuickSort.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1600" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/QuickSort.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1601" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1618" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1619" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/MeetingRoom2.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="1621" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack/StackUsingQueue225.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1622" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/wordbreak139.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1626" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/LongestIncreasingSubSequence.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1628" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ReverseStringNo541.java</url>
           <line>10</line>
@@ -1982,13 +1959,29 @@
           </properties>
           <option name="timeStamp" value="835" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/DFS/SorroundedRegions.java</url>
+          <line>24</line>
+          <properties class="DFS.SorroundedRegions" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1588" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="set" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaLearning$FloodFill733.ic" NAME="FloodFill733 Coverage Results" MODIFIED="1611072675262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>BFS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaLearning$FindAllAnagramsInString.ic" NAME="FindAllAnagramsInString Coverage Results" MODIFIED="1590509144052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/JavaLearning$ConvertSortedArrToBST.ic" NAME="ConvertSortedArrToBST Coverage Results" MODIFIED="1582794881108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>BST.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/JavaLearning$FindAllAnagramsInString.ic" NAME="FindAllAnagramsInString Coverage Results" MODIFIED="1590509144052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

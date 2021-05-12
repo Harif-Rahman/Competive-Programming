@@ -1,0 +1,8 @@
+
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8À«˜ú.
+N
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8À«˜ú.
+l	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÊƒI8À«˜ú.
+l	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÊƒI8À«˜ú.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—··

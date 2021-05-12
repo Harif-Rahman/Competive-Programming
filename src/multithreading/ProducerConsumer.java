@@ -81,6 +81,7 @@ public class ProducerConsumer {
             notifyAll();
         }
 
+
         public synchronized String receive() {
             while (transfer) {
                 try {

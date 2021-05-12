@@ -1,0 +1,17 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ü©Ãìøÿÿÿÿ
+U	java:S106{"9Replace this use of System.out or System.err by a logger.(ëùµ»8§ãƒ³ù.
+o
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ï•ŞÊ8§ãƒ³ù.
+r	java:S117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öûô¨üÿÿÿÿ8§ãƒ³ù.
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÚÄ³ù.
+O
+java:S1128"-Remove this unused import 'javafx.util.Pair'.(û­ûºüÿÿÿÿ8 ï´³ù.
+m	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï•ŞÊ8§ãƒ³ù.
+E
+java:S1172$"(Remove this unused method parameter "n".(ï•ŞÊ8ÚÄ³ù.
+0
+java:S1700Q"Rename field "city"(â‡ÅÃ8ì³ù.
+{
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ò¬Ìıÿÿÿÿ8§ãƒ³ù.

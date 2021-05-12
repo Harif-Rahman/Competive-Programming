@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÀîéÉÿÿÿÿÿ
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ƒœ„„û.
+J
+java:S16045"(Make this anonymous inner class a lambda(¶¥Šêşÿÿÿÿ8ø¦š„û.
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ç²À„8ÂÈ€„û.

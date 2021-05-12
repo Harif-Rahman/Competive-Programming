@@ -1,0 +1,9 @@
+
+•
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ηµν‘
+f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Η¥ώ²
+r	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©Έ»φωÿÿÿÿ
+T	java:S125"<This block of commented-out lines of code should be removed.(™εωÿÿÿÿ
+J
+java:S1066"/Merge this if statement with the enclosing one.(†­΄8ϋ¦ϋω.

@@ -1,0 +1,12 @@
+
+‚
+java:S1319"lThe type of the "A" object should be an interface such as "List" rather than the implementation "ArrayList".(‰µÍã
+‚
+java:S1319"lThe type of the "A" object should be an interface such as "List" rather than the implementation "ArrayList".(©Ñàý
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰µÍã
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Ñàý
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰µÍã
+S	java:S106"9Replace this use of System.out or System.err by a logger.(½×Îìùÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡Èªú

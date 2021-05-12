@@ -1,0 +1,12 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÚäÿÿÿÿÿ
+M	java:S106J"9Replace this use of System.out or System.err by a logger.(°ª[
+S
+java:S1197j"8Move the array designator from the variable to the type.(Ş¤ô‹ûÿÿÿÿ
+M
+java:S1197"8Move the array designator from the variable to the type.(§¨ß/
+0
+java:S1220""Move this file to a named package.
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(•§á¡ıÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃÚäÿÿÿÿÿ
