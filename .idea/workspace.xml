@@ -5,74 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5646821-a832-4d1d-a3ae-af664920ece3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Array/MeetingRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/MeetingRoom2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/SpecialPositionsInBinaryMatrix1582.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/SumOfArrayWithoutLoops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backtracking/LetterCasePermutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithreading/CountDownLatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithreading/PrintZeroEvenOdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/StackUsingQueue225.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/LongestStringChain1048.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/ConnectHeadAndTail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/LeadersInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/5846fccd0c60711a39eef0d3f5600c611ee27141" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/5846fccd0c60711a39eef0d3f5600c611ee27141" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e5a2646cfaa39884f0f6239436bf752534d9273" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e5a2646cfaa39884f0f6239436bf752534d9273" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/707f4e6549207af8f9f3d732f8bc4beb474a2949" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/707f4e6549207af8f9f3d732f8bc4beb474a2949" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e65696067cb0dcb67b437e03744cade9a6c039" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e65696067cb0dcb67b437e03744cade9a6c039" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/796a7e15039d8a21e0dc01983893a53c12f0c5ad" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/796a7e15039d8a21e0dc01983893a53c12f0c5ad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a81fc5dc44403f104822917f93829002c2f982c3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a81fc5dc44403f104822917f93829002c2f982c3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af95108fafe69854ab172fb1fec775985c31b172" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af95108fafe69854ab172fb1fec775985c31b172" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BFS/RottenOranges994.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/BFS/RottenOranges994.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BFS/TimeNeededToInformAllEmplloyees1376.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/BST/ConvertBSTtoGreaterTree538.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/ConvertBinaryNumberLLtoInteger1290.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/ConvertBinaryNumberLLtoInteger1290.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LetterCombinationsOfPhoneNumeber17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LetterCombinationsOfPhoneNumeber17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LongestIncreasingPathInMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DFS/LongestIncreasingPathInMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DFS/SorroundedRegions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DFS/SorroundedRegions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/LongestIncreasingSubSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DP/LongestIncreasingSubSequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/MinNofCoinsChange322.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DP/MinNofCoinsChange322.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/ZeroOneMatrix542.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/DP/wordbreak139.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/DP/wordbreak139.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Graph/CloneGraph133.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/InsertInterval57.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/InsertInterval57.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/KClosestPoints$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/KClosestPoints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LargestNumberFormedFromArray179.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LargestNumberFormedFromArray179.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LargestRectangleInHistogram84.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LargestRectangleInHistogram84.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/LinkedList/RemoveZeroSumConsecutiveNodesFromLL1171.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/META-INF/JavaLearning.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MaximumSlidingWindow239.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MaximumSlidingWindow239.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MergeIntervals56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MergeIntervals56.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MinimumWindowSubString76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MinimumWindowSubString76.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/MyPower50.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/MyPower50.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PancakeSorting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PartitionLabels763.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/PartitionLabels763.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/PermutationsInString567.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/PermutationsInString567.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Pramp/FlattenDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Pramp/FlattenDictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SlidingWindow/LongestSubstringWithoutRepeatingCharacters3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SlidingWindow/LongestSubstringWithoutRepeatingCharacters3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146$SnapshotArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146$SnapshotArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SnapShotArray1146.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/StringToAtoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/StringToAtoi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/SwapNodesInPairs24.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/AllNodeDistanceKInBinaryTree863$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/AllNodeDistanceKInBinaryTree863.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/AllNodeDistanceKInBinaryTree863.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/CheapestFlightWithKStops787.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/CheapestFlightWithKStops787.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/ConvertSortedListToBST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Tree/IncreasingOrderSearchTree897.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/AddAndSearchWord211$Trie$TrieNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/AddAndSearchWord211$Trie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/AddAndSearchWord211.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720$Trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720$Trie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/Trie/LongestWordInDictionary720.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/clumsyFactorial1006.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/clumsyFactorial1006.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/kthLargestElementInAnArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/kthLargestElementInAnArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaLearning/topKFrequentElements347.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLearning/topKFrequentElements347.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DFS/SorroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/SorroundedRegions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DP/LongestIncreasingSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/LongestIncreasingSubSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DP/wordbreak139.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/wordbreak139.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindowMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multithreading/ProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multithreading/ProducerConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NextGreaterElement503.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NextGreaterElement503.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +75,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;yaml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -140,7 +86,7 @@
       <recent name="DP" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OpenLock752">
+  <component name="RunManager" selected="Application.NextGreaterElement503">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -162,12 +108,12 @@
       <module name="" />
       <method v="2" />
     </configuration>
-    <configuration name="LongestIncreasingSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.LongestIncreasingSubSequence" />
+    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithreading.CountDownLatchDemo" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="multithreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,21 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenLock752" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BFS.OpenLock752" />
-      <module name="JavaLearning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackUsingQueue225" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.StackUsingQueue225" />
+    <configuration name="LeadersInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.LeadersInArray" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
@@ -201,21 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfArrayWithoutLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.SumOfArrayWithoutLoops" />
-      <module name="JavaLearning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="wordbreak139" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.wordbreak139" />
+    <configuration name="LongestStringChain1048" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.LongestStringChain1048" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
@@ -227,24 +147,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="NextGreaterElement503" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NextGreaterElement503" />
+      <module name="JavaLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseStackUsingRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.ReverseStackUsingRecursion" />
+      <module name="JavaLearning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OpenLock752" />
-        <item itemvalue="Application.SumOfArrayWithoutLoops" />
-        <item itemvalue="Application.LongestIncreasingSubSequence" />
-        <item itemvalue="Application.wordbreak139" />
-        <item itemvalue="Application.StackUsingQueue225" />
+        <item itemvalue="Application.NextGreaterElement503" />
+        <item itemvalue="Application.LeadersInArray" />
+        <item itemvalue="Application.LongestStringChain1048" />
+        <item itemvalue="Application.ReverseStackUsingRecursion" />
+        <item itemvalue="Application.CountDownLatchDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -359,6 +301,10 @@
       <workItem from="1615461645233" duration="395000" />
       <workItem from="1617891564850" duration="918000" />
       <workItem from="1620323488934" duration="818000" />
+      <workItem from="1620842874460" duration="3471000" />
+      <workItem from="1620896109869" duration="4242000" />
+      <workItem from="1621360533491" duration="961000" />
+      <workItem from="1621425470929" duration="2855000" />
     </task>
     <servers />
   </component>
@@ -1935,6 +1881,46 @@
           <line>32</line>
           <option name="timeStamp" value="1628" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BFS/OpenLock752.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1629" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList/ReverseLL.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1635" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList/ConnectHeadAndTail.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="1639" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1641" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack/ReverseStackUsingRecursion.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1642" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/LongestStringChain1048.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1643" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack/LeadersInArray.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1648" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/NextGreaterElement503.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1651" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ReverseStringNo541.java</url>
           <line>10</line>
@@ -1969,6 +1955,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="LinkedList.ConnectHeadAndTail$ListNode" memberName="c" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="set" />
@@ -1982,6 +1973,9 @@
     <SUITE FILE_PATH="coverage/JavaLearning$FindAllAnagramsInString.ic" NAME="FindAllAnagramsInString Coverage Results" MODIFIED="1590509144052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/JavaLearning$ConvertSortedArrToBST.ic" NAME="ConvertSortedArrToBST Coverage Results" MODIFIED="1582794881108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>BST.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaLearning$LongestStringChain1048.ic" NAME="LongestStringChain1048 Coverage Results" MODIFIED="1621274256920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DP.*</FILTER>
     </SUITE>
   </component>
 </project>

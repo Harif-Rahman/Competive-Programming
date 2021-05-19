@@ -18,7 +18,7 @@ The second 1's next greater number needs to search circularly, which is also 2.
      */
     public static void main(String[] args) {
         int[] arr ={100,1,11,1,120,111,123,1,-1,-100};
-        System.out.println(Arrays.toString(nextGreaterElements(arr)));
+        System.out.println(Arrays.toString(nextGreaterElementsWithoutExtraSpace(arr)));
     }
 
     /**
@@ -41,4 +41,26 @@ The second 1's next greater number needs to search circularly, which is also 2.
         return res;
     }
     //[18,6,6,6,1,-1]
+
+    public static int[] nextGreaterElementsWithoutExtraSpace(int[] nums) {
+
+        if(nums == null || nums.length == 0){
+            return new int[]{};
+        }
+        Stack<Integer> stack = new Stack<>();
+
+        int[] res = new int[nums.length];
+        for(int i=0;i<nums.length*2;i++){
+            while(!stack.isEmpty() && nums[stack.peek()] < nums[i % nums.length]){
+                res[stack.pop()] = nums[i % nums.length];
+            }
+            if(i < nums.length){
+                stack.push(i);
+            }
+        }
+        while(!stack.isEmpty()){
+            res[stack.pop()] = -1;
+        }
+        return res;
+    }
 }

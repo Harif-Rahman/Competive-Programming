@@ -9,10 +9,18 @@ public class ReverseStackUsingRecursion {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-        reverseStackUsignRec(stack);
+        reverseStackUsingRec1(stack,null);
         System.out.println(stack);
         while (!stack.isEmpty()){
             System.out.println(stack.pop());
+        }
+    }
+    public static void reverseStackUsingRec1(Stack<Integer> stack,Integer popped){
+        if(!stack.isEmpty()){
+            reverseStackUsingRec1(stack,stack.pop());
+        }
+        if(popped != null){
+            stack.push(popped);
         }
     }
 
