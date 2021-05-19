@@ -12,3 +12,4 @@
 *.kotlin_module
 .idea/workspace.xml
 *.xml
+.idea/*
