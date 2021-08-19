@@ -32,12 +32,41 @@ Your function should return length = 5, with the first five elements of nums bei
 It doesn't matter what values are set beyond the returned length.
      */
     public static void main(String[] args) {
-        ArrayList<Integer> al = new ArrayList<>();
-        al.add(5000);
-        al.add(5000);
-        al.add(5000);
-        removeDuplicates(al);
+        int[] arr = {1,2,2,3,3,4};
+        removeDuplicates1(arr);
     }
+// 1 2 2 3 3 4
+//     l
+//     r
+    public static int removeDuplicates1(int[] nums) {
+
+        if(nums == null || nums.length == 0){
+            return 0;
+        }
+        if(nums.length == 1){
+            return nums.length;
+        }
+
+        int left = 1;
+        for(int right = 1;right < nums.length;right++){
+            if(nums[left-1] != nums[left]){
+                nums[left] = nums[right];
+                left++;
+            }
+        }
+        return left+1;
+    }
+
+
+
+
+
+
+
+
+
+
+
     public static int removeDuplicates(int[] nums) {
         int begInd = 0; //pointer which hold the initial pointer to store the unique elements
         for(int i=0;i<nums.length-1;i++){
